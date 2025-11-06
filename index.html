@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Student Registration Form</h1>
+    <form>
+      <label>Roll no. :</label>
+      <input type="text" name="roll" required>
+
+      <label>Student name :</label>
+      <div class="name-field">
+        <input type="text" name="fname" placeholder="First Name" required>
+        <input type="text" name="lname" placeholder="Last Name" required>
+      </div>
+
+      <label>Father's name :</label>
+      <input type="text" name="fathername" required>
+
+      <label>Date of birth :</label>
+      <div class="dob-field">
+        <select>
+          <option>Day</option>
+        </select>
+        <select>
+          <option>Month</option>
+        </select>
+        <select>
+          <option>Year</option>
+        </select>
+        <span>(DD-MM-YYYY)</span>
+      </div>
+
+      <label>Mobile no. :</label>
+      <div class="mobile-field">
+        <input type="text" value="+91" readonly>
+        <input type="text" placeholder="Enter number" required>
+      </div>
+
+      <label>Email id :</label>
+      <input type="email" name="email" required>
+
+      <label>Password :</label>
+      <input type="password" name="password" required>
+
+      <label>Gender :</label>
+      <div class="gender-field">
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+      </div>
+
+      <label>Department :</label>
+      <div class="dept-field">
+        <input type="checkbox"> CSE
+        <input type="checkbox"> IT
+        <input type="checkbox"> ECE
+        <input type="checkbox"> Civil
+        <input type="checkbox"> Mech
+      </div>
+
+      <label>Course :</label>
+      <select>
+        <option>----------------Select Current Course----------------</option>
+        <option>B.Tech</option>
+        <option>B.Sc</option>
+        <option>BCA</option>
+        <option>M.Tech</option>
+      </select>
+
+      <label>Student photo :</label>
+      <input type="file">
+
+      <label>City :</label>
+      <input type="text" name="city">
+
+      <label>Address :</label>
+      <textarea rows="3" cols="30"></textarea>
+
+      <div class="btn-container">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
